@@ -14,9 +14,7 @@ from datetime import datetime
 # TESSERACT PATH (WINDOWS)
 # Uncomment and change path if needed
 # =========================
-import pytesseract
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
@@ -24,11 +22,11 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 # =========================
 # LOAD FILES
 # =========================
-model = joblib.load("model/model.pkl")
-scaler = joblib.load("model/scaler.pkl")
-encoder = joblib.load("model/encoder.pkl")
-num_cols = joblib.load("model/num_cols.pkl")
-cat_cols = joblib.load("model/cat_cols.pkl")
+model = joblib.load("model.pkl")
+scaler = joblib.load("scaler.pkl")
+encoder = joblib.load("encoder.pkl")
+num_cols = joblib.load("num_cols.pkl")
+cat_cols = joblib.load("cat_cols.pkl")
 
 # =========================
 # SESSION STATE
