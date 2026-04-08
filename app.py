@@ -13,7 +13,7 @@ from datetime import datetime
 # =========================
 # PAGE CONFIG
 # =========================
-st.set_page_config(page_title="AI Credit Intelligence System", layout="wide")
+#st.set_page_config(page_title="AI Credit Intelligence System", layout="wide")
 
 # =========================
 # LOGIN SYSTEM
