@@ -10,32 +10,7 @@ import pytesseract
 from PIL import Image
 from datetime import datetime
 
-# =========================
-# PAGE CONFIG
-# =========================
-#st.set_page_config(page_title="AI Credit Intelligence System", layout="wide")
 
-# =========================
-# LOGIN SYSTEM
-# =========================
-VALID_USERNAME = "admin"
-VALID_PASSWORD = "1234"
-
-if "logged_in" not in st.session_state:
-    st.session_state.logged_in = False
-
-def login_page():
-    st.title("🔐 Login Page")
-    username = st.text_input("Username")
-    password = st.text_input("Password", type="password")
-
-    if st.button("Login"):
-        if username == VALID_USERNAME and password == VALID_PASSWORD:
-            st.session_state.logged_in = True
-            st.success("Login successful")
-            st.rerun()
-        else:
-            st.error("Invalid credentials")
 
 # =========================
 # TESSERACT PATH (WINDOWS)
