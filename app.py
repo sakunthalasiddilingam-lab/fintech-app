@@ -265,21 +265,7 @@ def predict_credit_score(data):
 
     report = generate_report(row, score)
     return row, score, decision, report
-# =========================
-# LOGIN CONTROL
-# =========================
-if not st.session_state.logged_in:
-    login_page()
-    st.stop()
 
-# =========================
-# SIDEBAR + LOGOUT
-# =========================
-st.sidebar.success("Logged in")
-
-if st.sidebar.button("Logout"):
-    st.session_state.logged_in = False
-    st.rerun()
 # =========================
 # NAVIGATION
 # =========================
